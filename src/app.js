@@ -8,7 +8,10 @@ const app = express();
 app.use(express.static("public"))
 
 //Poner a escuchar al servidor:
-app.listen(3032, () => console.log("Servidor corriendo"))
+/* app.listen(3032, () => console.log("Servidor corriendo")) */
+
+const port = process.env.PORT || 3001;
+app.listen(port, () => console.log('Servidor corriendo en el puerto ${port}'));
 
 //Manejo de rutas:
 //Ruta raiz "/"":
