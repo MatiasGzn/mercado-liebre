@@ -1,0 +1,330 @@
+* { /* cuando lo aplico se me juntaron algunos elementos */
+    margin: 0px ;
+    padding: 0px ;
+    box-sizing: border-box ;
+}
+
+body{
+    background-color: #ebebeb;
+}
+
+.main-header{
+    background-color: #EAC926;
+    padding: 5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+h2{
+    font-size: 24px;
+    padding: 16px;
+}
+
+.precio-size{
+    font-size: 18px;
+    width: 30%;
+}
+
+.off{
+    font-size: 16px;
+    width: 70%;
+}
+
+.descrip {
+    font-size: 16px;
+}
+
+.burger-menu{/* (hace referencia a la equiquta div y no al icono) */
+    text-align: center;
+    /* color: white; (es indistinto poner el color aqui o en .buguer-menu i)*/
+}
+
+.burger-menu i{
+    background-color: #1259c3;
+    font-size: 25px;
+    padding: 3%;
+    border-radius: 15%;
+    color: white;
+}
+
+footer{
+    text-align: center;
+    background-color: white;
+    padding: 5%;
+    padding-top: 10%;
+}
+
+.ifooter{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.article{
+    margin-bottom: 10px;
+    background-color: white;
+    width: 90%;
+    transition: box-shadow, 450ms;
+}
+
+.img-article{
+    width: 100%;
+    margin: auto;
+}
+
+
+.fa-truck{
+    color: #39b54a;
+    border: solid 1px #39b54a;
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 2%;
+    background-color: white;
+    transition: transform, 450ms;
+}
+
+.div-article{
+    border-top: solid 1px #ebebeb;
+    background-color: white;
+    padding: 15px;
+    position: relative;
+}
+
+.off{
+    color: #39b54a;
+}
+
+.descrip{
+    display: none;
+}
+
+.main-list{
+    display: none;
+}
+
+.main-list ul{ /* saco la viñeta, margen y relleno */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-list a{ /* saco el subrayado */
+    text-decoration: none;
+    color: black;
+    display: inline-block; /* para poder manipular el padding */
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.text-under-navbar{
+    text-align: center;
+    padding: 25px 0px;
+}
+
+main section article i {
+    display: block ;
+    font-size: 16 px ;
+    padding: 5 px ;
+    width: 30 px ;
+    height: 30 px ;
+    border: 1 px solid #39b54a ;
+    background-color: #FFF ;
+    border-radius: 50% ;
+    position: absolute ; /* al ser absoluta busca ponerse en un container position: relativo? */
+    right: 20px ;
+    top: -15px;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.img-banner{
+    width: 100%;
+}
+
+.container-logo-navbar input{
+    width: 50%;
+    max-width: 185px;
+}
+
+.container-logo-navbar img{
+    width: 50%;
+    padding-right: 10px;
+}
+
+.container-logo-navbar{
+    display: flex;
+    align-items: center;
+}
+
+.container-div-footer{
+    margin-top: 20px;
+}
+
+.copyright-text{
+    margin-top: 20px;
+}
+
+
+
+/* --------------formulario de registro--------------- */
+
+.form-register{
+    background-color: #ebebeb;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.form-register div{
+    padding: 10px;
+}
+
+.datausers{
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #ebebeb;
+}
+
+.label-radio{
+    text-align: center;
+    padding: 0px 15px;
+}
+
+.label-checkbox{
+    display: inline-block;
+    width: 100%;
+}
+
+.label-checkbox input{
+    display: inline-block;
+    margin: 10px;
+}
+
+.subtitle{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* ---------------------formulario de login---------------------- */
+.form-login{
+    background-color: #ebebeb;
+    padding: 20px;
+    margin: auto;
+    max-width: 650px;
+}
+
+.form-login div{
+    padding: 15px 10px;
+}
+
+.buttom-send{
+    background-color: #1259c3;
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #1259c3;
+    color: white;
+    transition: all, 450ms;
+}
+
+.buttom-send:hover{
+    background-color: #0022AA;
+    border: 1px solid #0022AA;
+}
+
+.article:hover{
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.article:hover .descrip{
+    display: block;
+}
+
+.fa-truck:hover{
+    transform: rotateZ(-90deg);
+}
+
+
+/* cortes de lineas: */
+@media (min-width: 500px){
+    .descrip{
+        display: block;
+    }
+
+    /* .article{
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    } */
+
+    .main-list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-list ul{
+        display: flex;
+    }
+
+    .main-list li{
+        margin: 0 10px;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .article{
+        width: 45%;
+    }
+
+    .container-topheader{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media (min-width: 769px){
+    .article{
+        width: 22%;
+    }
+
+    .main-list{
+        margin-top: 16px;
+    }
+
+    .main-header{
+        padding: 2% 5%;
+    }
+
+    .copyright-text{
+        margin-top: 40px;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .container-div-footer{
+        margin-top: 0px;
+        width: 30%;
+    }
+}
+
+ 
+/* Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; */
